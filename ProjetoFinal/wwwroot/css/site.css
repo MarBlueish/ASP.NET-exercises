@@ -1,0 +1,45 @@
+.form-header{
+    font-size: 24px;
+    font-weight: 500;
+    color: red;
+    padding-bottom: 20px;
+}
+
+#spaceSpan{
+    padding: 5px;
+}
+
+navbar-toggler{
+    color: white;
+    background-color: #004a55;
+    cursor: pointer;
+}
+
+  
+navbar-toggler:hover {
+        color: white;
+        background-color: #fe735c !important;
+        cursor:pointer;
+}
+
+header > nav{
+    background-color: #fe735c !important;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #fe735c !important;
+}
+body {
+    background-image: url('../img/backgroundimage3.jpg');
+    position:center;
+}
+
+
+
+select {
+    width: 200px; /* Ajuste conforme necessário */
+    padding: 8px;
+    font-size: 16px;
+}
+
+
