@@ -5,7 +5,6 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Ativ9_Projeto</RootNamespace>
-    <UserSecretsId>b80921ed-bddb-4964-a182-3138e5a8ac46</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

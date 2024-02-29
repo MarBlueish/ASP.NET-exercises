@@ -11,39 +11,8 @@ html {
 html {
   position: relative;
   min-height: 100%;
-  color: snow;
 }
 
 body {
-    margin-bottom: 60px;
-    background-color: #5b5a78;
-    font-weight: bold;
-    color: snow;
-    position: center;
+  margin-bottom: 60px;
 }
-h1,h2,h3,h4{
-    color: snow;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Anton');
-
-.cursor {
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    position: absolute;
-    border-radius: 5px;
-}
-
-.cursor__follower {
-    transition: transform .4s;
-    width: 10px;
-    height: 10px;
-}
-
-
-
-
-

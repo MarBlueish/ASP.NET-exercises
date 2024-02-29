@@ -3,14 +3,6 @@
     "mssql1": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:Ativ9_ProjetoContext"
-    },
-    "secrets1": {
-      "type": "secrets"
-    },
-    "sqlite1": {
-      "type": "sqlite",
-      "connectionId": "ConnectionStrings",
-      "dynamicId": null
     }
   }
 }

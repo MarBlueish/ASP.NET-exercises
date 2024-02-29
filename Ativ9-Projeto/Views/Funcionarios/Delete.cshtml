@@ -1,10 +1,10 @@
 ﻿@model Funcionario
 
 @{
-    ViewData["Title"] = "Apagar";
+    ViewData["Title"] = "Delete";
 }
 
-<h1>Apagar</h1>
+<h1>Delete</h1>
 
 <h3>Tens a certeza que queres apagar?</h3>
 <div>
@@ -58,6 +58,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Voltar</a>
+        <a asp-action="Index">Back to List</a>
     </form>
 </div>

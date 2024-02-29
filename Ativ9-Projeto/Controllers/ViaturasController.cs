@@ -22,9 +22,9 @@ namespace Ativ9_Projeto.Controllers
         // GET: Viaturas
         public async Task<IActionResult> Index()
         {
-            return _context.Viatura != null ?
-                        View(await _context.Viatura.ToListAsync()) :
-                        Problem("Entity set 'Ativ9_ProjetoContext.Viatura'  is null.");
+              return _context.Viatura != null ? 
+                          View(await _context.Viatura.ToListAsync()) :
+                          Problem("Entity set 'Ativ9_ProjetoContext.Viatura'  is null.");
         }
 
         // GET: Viaturas/Details/5
@@ -150,29 +150,14 @@ namespace Ativ9_Projeto.Controllers
             {
                 _context.Viatura.Remove(viatura);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ViaturaExists(int id)
         {
-            return (_context.Viatura?.Any(e => e.ID == id)).GetValueOrDefault();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Inserir(Viatura viatura)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Viatura.Add(viatura);
-                await _context.SaveChangesAsync();
-
-                return RedirectToAction("Viaturas");
-            }
-
-            
-            return RedirectToAction("Viaturas");
+          return (_context.Viatura?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

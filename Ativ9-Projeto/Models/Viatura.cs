@@ -19,6 +19,5 @@ namespace Ativ9_Projeto.Models
         public decimal Preco { get; set; }
         [Display(Name = "Forma de Pagamento")]
         public string? ForPgto { get; set; }
-       
-    }
+    }// a continuar, ja realizado scaffold a esta pagina
 }
