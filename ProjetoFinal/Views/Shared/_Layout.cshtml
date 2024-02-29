@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <img src="~/img/imobiliaria.png" width="100px" height="40px" padding="5px"/>
+                <img src="~/img/imobiliaria.png" width="100px" height="40px" padding="5px" />
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" 
-                            asp-area="" 
-                            asp-controller="Clientes"
-                            asp-action="Index">Clientes</a>
+                            <a class="nav-link text-dark"
+                               asp-area=""
+                               asp-controller="Clientes"
+                               asp-action="Index">Clientes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark"
@@ -36,7 +36,13 @@
                                asp-area=""
                                asp-controller="Interesses"
                                asp-action="Index">Interesses</a>
-                               </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               asp-area=""
+                               asp-controller="Casas"
+                               asp-action="Index">Casas Disponiveis</a>
+                        </li>
                     </ul>
                 </div>
                 <span id="spaceSpan"></span>
@@ -48,22 +54,20 @@
             @RenderBody()
         </main>
     </div>
-    <body>
-        <div class="visita">
-            <h4>Marque uma Visita conosco!</h4>
-        </div>
-        <div class="selection">
-            
-                <h4>Escolha uma opção:</h4>
-                <button onclick="location.href='@Url.Action("Visita")'">Marcar Uma Visita</button>
-                <button onclick="location.href='@Url.Action("Casa")>Casa</button>
-                <button onclick="location.href='@Url.Action("Interesse", "Home")'">Interesse</button>
-                <button onclick="location.href='@Url.Action("Clientes", "Home")'">Clientes</button>
-            
-        </div>
-    </body>
 
-    
+
+    <div class="visita text-center">
+        <h4>Selecione a opção do Cliente </h4>
+    </div>
+    <div class="selection text-center">
+        <h4>Escolha uma opção:</h4>
+        <button onclick="location.href='/Visitas'">Marcar Uma Visita</button>
+        <button onclick="location.href='/Casas'">Ver Casas Disponíveis</button>
+        <button onclick="location.href='/Interesses'">Interesses de Cliente</button>
+        <button onclick="location.href='/Clientes'">Clientes</button>
+    </div>
+
+    <!-- Footer Section with Image Carousel -->
     <footer class="border-top footer text-muted">
         <div class="container">
             <span class="mb-3 mb-0 text-muted">
@@ -73,9 +77,37 @@
             </span>
         </div>
     </footer>
+
+    <div id="footerImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/img/casa1.jpg" class="d-block" alt="Casa 1">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/casa2.jpg" class="d-block" alt="Casa 2">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/casa3.jpg" class="d-block" alt="Casa 3">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/casa4.jpg" class="d-block" alt="Casa 4">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/casa5.jpg" class="d-block" alt="Casa 5">
+            </div>
+            <div class="carousel-item">
+                <img src="~/img/casa6.jpg" class="d-block" alt="Casa 6">
+            </div>
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </div>
+
+    <!-- End Footer Section with Image Carousel -->
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

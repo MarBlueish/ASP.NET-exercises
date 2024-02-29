@@ -43,3 +43,19 @@ select {
 }
 
 
+#footerImageCarousel img {
+    width: 175px;
+    height: 175px;
+    margin: 5px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: center;
+    
+}
+
+
+#footerImageCarousel {
+    max-width: 300px;
+    margin: 0 auto;
+   
+}

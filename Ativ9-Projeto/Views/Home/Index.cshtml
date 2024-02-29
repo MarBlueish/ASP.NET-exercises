@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo ao sistema de Gestão de Stand</h1>
+    <p>Como eu fiz? <a href="https://docs.microsoft.com/aspnet/core">Clica Aqui!</a>.</p>
+    <br> <br />
+
+    <h2>Quero comprar uma viatura</h2>
+    <h5>Adicione os detalhes do cliente para verificação de disponibilidade</h5>
+
+    <form method="post" action="/Viaturas/Inserir">
+        <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" class="form-control" id="marca" name="marca" required>
+        </div>
+        <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" required>
+        </div>
+        <div class="form-group">
+            <label for="cor">Cor:</label>
+            <input type="text" class="form-control" id="cor" name="cor" required>
+        </div>
+        <div class="form-group">
+            <label for="cilindrada">Cilindrada:</label>
+            <input type="text" class="form-control" id="cilindrada" name="cilindrada" required>
+        </div>
+        <div class="form-group">
+            <label for="ano">Ano:</label>
+            <input type="text" class="form-control" id="ano" name="ano" required>
+        </div>
+        <div class="form-group">
+            <label for="mes">Mês:</label>
+            <input type="text" class="form-control" id="mes" name="mes" required>
+        </div>
+        <div class="form-group">
+            <label for="tipo">Tipo:</label>
+            <input type="text" class="form-control" id="tipo" name="tipo" required>
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço:</label>
+            <input type="text" class="form-control" id="preco" name="preco" required>
+        </div>
+        <div class="form-group">
+            <label for="forPgto">Forma de Pagamento:</label>
+            <input type="text" class="form-control" id="forPgto" name="forPgto" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Adicionar Viatura</button>
+    </form>
+
+    <br /><br />
+
+    <h2>Quero Desmarcar uma Visita</h2>
+    <h5>Insira o telemovel do Cliente para confirmação</h5>
+
+    <!-- Adiciona aqui o formulário ou a lógica para desmarcar a visita -->
+
+    <br /><br />
+</div>
+
+
+
